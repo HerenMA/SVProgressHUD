@@ -24,10 +24,11 @@ Pod::Spec.new do |s|
     ss.resources    = 'SVProgressHUD/SVProgressHUD.bundle'
   end
   
-  #s.subspec 'Framework' do |ss|
-  #  ss.ios.vendored_framework   = 'ios/SVProgressHUD.framework'
-  #  ss.resources    = 'SVProgressHUD/SVProgressHUD.bundle'
-  #end
+  s.subspec 'Framework' do |ss|
+    ss.ios.vendored_framework   = 'ios/SVProgressHUD.framework'
+    ss.tvos.vendored_framework   = 'tvos/SVProgressHUD.framework'
+    ss.resources   = 'SVProgressHUD/SVProgressHUD.bundle'
+  end
   
   s.framework    = 'QuartzCore'
   
